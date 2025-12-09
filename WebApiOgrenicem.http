@@ -1,0 +1,6 @@
+@WebApiOgrenicem_HostAddress = http://localhost:5212
+
+GET {{WebApiOgrenicem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
