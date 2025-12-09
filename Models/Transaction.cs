@@ -9,13 +9,11 @@ namespace WebApiOgrenicem.Models
     {
         public int Id { get; set; }
         public string UserId { get; set; }
-        public int AccountId { get; set; } // Fixed type mismatch (was string)
+        public int AccountId { get; set; }
         public decimal Amount { get; set; }
         public DateTime TransactionDate { get; set; }
-        public string TransactionType { get; set; } // "Deposit", "Withdrawal" etc.
+        public string TransactionType { get; set; }
         public string Description { get; set; }
-
-        // Navigation Property
         public Account Account { get; set; }
     }
 }
